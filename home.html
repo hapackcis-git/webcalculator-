@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link id="fontawesome" rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/CSS">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+   
+    </style>
+</head>
+<body style="background-color: #e3e3e3;">
+  <!-- Top bars -->
+  <section class="top-bar">
+    <div class="container-fluid mt-3">
+      <div class="row">
+          <div class="col-md-3 ">
+            <i  class="fa fa-bars" aria-hidden="true"></i> 
+            <strong style="padding: 10px; font-weight: bold;">Standard</strong>
+
+
+          </div>
+          <div class="col-md-7">
+
+          </div>
+          <div class="col-md-2">
+            <label class="history">History</label>
+            <label class="memory">Memory</label>
+
+          </div>
+
+      </div>
+
+  </div>  
+
+  </section>
+  
+  
+   
+    <!--  Input area-->
+    <section>
+     <div class="row">
+      <div class="col-md-10"> 
+        <input id="output-screen"  class="txtarea" type="text" placeholder="0" style="font-weight: bolder; font-size: 50px;"/>
+
+      </div>
+      <div class="col-md-2">
+
+      </div>
+
+     </div>
+    </section>
+
+    <!-- M-BTN AREA -->
+    <section >
+      <div class="row mt-3 ">
+        <div class="col-md-5 item">
+          <label  style="color: grey;">MC</label>
+          <label style="margin-left: 50px; color: grey;">MR</label>
+          <label style="margin-left: 50px; ">M+</label>
+          <label style="margin-left: 50px;">M-</label>
+          <label style="margin-left: 50px;">MS</label>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Number for button -->
+    <section style="margin-left: 5px;">
+    
+      <div class="button">
+        <div class="row" >
+          <div class="col-md-10 ">
+          <button  class="btn btn-light" onclick="display('%')">%</button>
+          <button class="btn btn-light"  >CE</button>
+          <button class="btn btn-light" onclick="Clear()" >C</button>
+          <button class="btn btn-light"  onclick="display('/')">/</button>
+  
+          </div>
+  
+        </div>
+  
+      
+        <div class="row mt-1"  >
+          <div class="col-md-10 ">
+          <button class="btn btn-light"  onclick="display('7')">7</button>
+          <button class="btn btn-light" onclick="display('8')">8</button>
+          <button class="btn btn-light" onclick="display('9')">9</button>
+          <button class="btn btn-light" onclick="display('*')">*</button>
+  
+          </div>
+  
+        </div>
+        <div class="row mt-1"  >
+          <div class="col-md-10 ">
+          <button class="btn btn-light" onclick="display('4')" >4</button>
+          <button class="btn btn-light" onclick="display('5')">5</button>
+          <button class="btn btn-light" onclick="display('6')">6</button>
+          <button class="btn btn-light"onclick="display('-')" >-</button>
+  
+          </div>
+  
+        </div>
+        <div class="row mt-1"  >
+          <div class="col-md-10 ">
+          <button class="btn btn-light" onclick="display('1')">1</button>
+          <button class="btn btn-light"onclick="display('2')" >2</button>
+          <button class="btn btn-light" onclick="display('3')" >3</button>
+          <button class="btn btn-light" onclick="display('+')">+</button>
+  
+          </div>
+          <div class="row mt-1"  >
+            <div class="col-md-10 ">
+            <button class="btn btn-light" onclick="backspace()">x</button>
+            <button class="btn btn-light"  onclick="display('0')">0</button>
+            <button class="btn btn-light" style="font-weight: bold;"  onclick="display('.')" >.</button>
+            <button  class="btn btn-warning" onclick="Calculate()" class="equals" > =</button>
+    
+            </div>
+    
+          </div>
+  
+      </div>
+   
+    
+    </section>
+    <script src="/asset/js/bootstrap.min.js">
+      
+    </script>
+    
+    <script src="style.js"></script>
+</body>
+</html>

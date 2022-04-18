@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  
+}
+.memory{
+    padding: 10px;
+    font-weight: bold;
+}
+.history
+{
+    font-weight: bold;
+}
+
+.txtarea
+{
+    margin-left: 5px;
+    height: 100px;
+    width: 1200px;
+    background-color: transparent;
+}
+
+
+.item
+{
+ margin-left: 5px;
+
+}
+
+.button button
+{
+    width: 298px;
+    height: 95px;
+    border-radius: 2px;
+   margin-right: 0px;
+
+    
+}
+.button button:hover{
+    background-color: #c7c3c3;
+}
+
+.button .equals:hover{
+    background-color: yellow;
+}
+
+input{
+    border: hidden;
+     
+    text-align: right;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
